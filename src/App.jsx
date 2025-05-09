@@ -14,6 +14,23 @@ import { AuthProvider } from "./context/AuthContext";
 
 
 function App() {
+  /*
+  useEffect(() => {
+  const tryAutoLogin = async () => {
+    try {
+        let refreshToken = localStorage.getItem("refreshToken");
+
+        const res = await refreshAuth(refreshToken); // Your refresh token endpoint
+        const { accessToken, user } = res.data;
+        setAuth({ accessToken, user }); // user contains email etc.
+    } catch (err) {
+      console.log('Not logged in or refresh failed.');
+    }
+  };
+
+    tryAutoLogin();
+  }, []);
+  */
 
   return (
     <BrowserRouter>
