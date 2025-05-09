@@ -172,6 +172,14 @@ nav ul li a {
   padding: 0px;
 }
 
+#brown-btn {
+  background-color: rgb(61, 44, 6);
+}
+
+#brown-btn:hover {
+  filter: brightness(40%);
+}
+
 
 
 /*Auth Page Styling*/
@@ -237,13 +245,6 @@ nav ul li a {
   margin-bottom: 2rem;
 }
 
-#brown-btn {
-  background-color: rgb(61, 44, 6);
-}
-
-#brown-btn:hover {
-  filter: brightness(40%);
-}
 .ag-theme-quartz .ag-header {
   background-color: rgb(61, 44, 6);
 }
