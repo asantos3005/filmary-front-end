@@ -1,0 +1,277 @@
+@import url("https://fonts.googleapis.com/css2?family=Jacques+Francois&family=Manrope:wght@200..800&display=swap");
+
+
+/* Simple browser reset */
+
+.jacques-francois-regular {
+  font-family: "Jacques Francois", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body, #root, .App {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+
+#root {
+  width: 100%;
+}
+
+main {
+  background-color: #DBDBDB;
+  /*IMPORTANT TO OFFSET FROM UNDER FIXED POS NAV*/
+  padding-top: 100px;
+}
+
+
+main h1, h2, h3 {
+  padding-right: 15px;
+  font-family: "Manrope";
+  letter-spacing: 0.5em;
+
+}
+
+.page-wrapper {
+  min-height: 100vh;
+}
+
+
+nav {
+  background-color: #DBDBDB;
+  width: 100vw;
+  margin: 0;
+  position: fixed;
+  top: 0;
+  padding: 1rem;
+  z-index: 1000;
+  font-family: "Jacques Francois";
+}
+
+/*To normalize padding for non centered inline content (planned images will be end to end width no padding)*/
+.default-non-image-padding {
+  padding-left: 30px;
+}
+
+
+#pageTitle{
+  font-size: 25px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;  /* Distributes first and last items to far ends */
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+/* Middle item */
+.navMiddle {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Right-aligned item */
+.navEnd {
+  margin-left: auto;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  text-decoration: none;
+  display: block;
+  padding: 10px 15px;
+  border-radius: 3px;
+  transition: 0.3s ease all;
+  color: black;
+
+}
+
+.footer {
+  background-color: rgb(46, 39, 23);
+  color: #fafafbc3;
+  font-family: "Jacques Francois";
+  text-align: center;
+
+}
+
+
+/* Home Page Styling */
+.header {
+  background-color: #DBDBDB;
+  width: 100%;
+  margin: 0;
+  padding-bottom: 20px;
+  padding-right: 10px;
+}
+
+.header h2{
+  font-family: "Manrope";
+  margin: 0;
+  letter-spacing: 0.55em;
+  color: #6d6d6d;
+  line-height: 70px;
+  font-size: 45px;
+
+}
+
+.header .firstHeader {
+  color: black;
+}
+
+.hero {
+  width: 100vw;
+  min-height: 800px;
+  margin: 0;
+  text-align: center;
+  background-image: url("/jeremy-yap-J39X2xX_8CQ-unsplash\ \(1\).jpg");
+  background-size: cover;
+}
+
+
+
+/* Movies Page Styling */
+.grid-container {
+  width: 98%;
+  padding-bottom: 50px;
+  font-family: "Jacques Francois"
+}
+
+.movies-header-bar {
+  display: flex;
+  align-items: center; /* aligns children vertically */
+  justify-content: space-between; /* push left & right apart */
+  padding-right: 20px;
+  letter-spacing: 0.5em;
+
+}
+
+.movies-actions {
+  display: flex;
+  gap: 1rem; /* spacing between input and dropdown */
+  align-items: center;
+}
+
+.filterDropdown {
+  padding: 0px;
+}
+
+
+
+/*Auth Page Styling*/
+.auth-forms-container {
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 10px;
+}
+
+.login-form, .registration-form {
+  min-width: 20vw;
+}
+
+.divider {
+  width: 2px;
+  height: 25vh; /* Less than 100% to not span full height */
+  align-self: center;
+  background-color: #5a5a5a; /* subtle gray line */
+}
+
+.auth-headings {
+  margin-bottom: 40px;
+}
+
+
+
+/*Movie Detail Styling*/
+.movie-details-box {
+  background-color: rgb(255, 255, 255);
+  padding: 0.7rem;
+  border-radius: 25px;
+}
+
+.movie-detail-kvpair{
+  display: flex;
+  margin-top: 25px;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+.movie-detail-tophalf {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.movie-detail-bottomhalf {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.year-select {
+  min-width: 100px;
+}
+
+
+
+
+/*People Page Styling*/
+.detail-header {
+  max-width: 60%;
+  margin-bottom: 2rem;
+}
+
+#brown-btn {
+  background-color: rgb(61, 44, 6);
+}
+
+#brown-btn:hover {
+  filter: brightness(40%);
+}
+.ag-theme-quartz .ag-header {
+  background-color: rgb(61, 44, 6);
+}
+
+.ag-theme-quartz .ag-header-cell-label {
+  color: white;
+}
+
+.brown-wrapper {
+  background-color: rgb(61, 44, 6);
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+  border-radius: 25px;
+}
+
+.brown-button {
+  background-color: rgb(61, 44, 6);
+}
+
+.back-link {
+  color: black;
+  text-decoration: underline;
+  cursor: pointer;
+  display: inline-block;
+  margin-bottom: 2rem;
+  margin-left: 1rem;    
+}
+
+.back-link:hover {
+  color: #818181; /* or any darker shade */
+}
