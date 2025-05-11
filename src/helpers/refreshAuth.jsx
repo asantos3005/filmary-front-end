@@ -14,7 +14,7 @@ export async function refreshAuth(refreshToken) {
 
     const data = await res.json();
 
-    // Save the new tokens (caller should handle this)
+    // Save the new tokens 
     return {
       newJwt: data.bearerToken.token,
       newRefresh: data.refreshToken.token,

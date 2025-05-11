@@ -70,12 +70,12 @@ export default function Movies() {
   };
 
   const columns = [
-    { headerName: "Title", field: "title", minWidth: 250 },
+    { headerName: "Title", field: "title", minWidth: 300 },
     { headerName: "Year", field: "year" },
     { headerName: "Id", field: "id" },
-    { headerName: "IMBD", field: "imdbRate", maxWidth: 120 },
-    { headerName: "Rotten Tomatoes", field: "rtRate", maxWidth: 120 },
-    { headerName: "Metacritic", field: "metaRate", maxWidth: 120 },
+    { headerName: "IMBD", field: "imdbRate", minWidth: 180 },
+    { headerName: "Rotten Tomatoes", field: "rtRate", minWidth: 180 },
+    { headerName: "Metacritic", field: "metaRate", minWidth: 180 },
     { headerName: "Classification", field: "classification", flex: 1 }
   ];
 
@@ -96,7 +96,7 @@ export default function Movies() {
       <div
         className="ag-theme-quartz grid-container default-non-image-padding"
         style={{
-          height: "400px",
+          height: "55vh",
           minWidth: "600px"
         }}
       >
@@ -142,7 +142,7 @@ function MovieSearchBar({ onSearch }) {
 
 function FilterDropdown({ selectedYear, onYearChange }) {
   const years = [];
-  for (let y = 1990; y <= new Date().getFullYear(); y++) {
+  for (let y = 1990; y <= 2023; y++) {
     years.push(y);
   }
 
