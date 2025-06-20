@@ -3,7 +3,7 @@ Filmary is a modern, responsive web application built with React that allows use
 This project was originally developed as part of a university web development unit but has since been refined to serve as a showcase of my skills in front-end and React development, and clean code practices.
 
 ## Video Demo
-<video src="./filmaryDemoVid.mp4" width="320" height="240" controls></video>
+[Watch Demo Video](./filmaryDemoVid.mp4)
 
 
 ## Features
