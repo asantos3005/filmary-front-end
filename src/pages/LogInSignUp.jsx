@@ -33,6 +33,8 @@ export default function LogInSignUp() {
   
       if (response.ok) {
         setRegistrationMessage(data.message); // "User created"
+        setRegEmail('');
+        setRegPassword('');
 
       } else {
         setRegistrationMessage(data.message || "Registration failed.");
