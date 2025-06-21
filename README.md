@@ -1,4 +1,4 @@
-Filmary is a modern, responsive web application built with React that allows users to explore detailed information about movies and the people behind them, including actors, directors, and other principals. You can search by movie title, apply filters, and view specific movie or individual profiles.
+This movie catalog browser (Filmary) is a modern web application built with React that allows users to explore detailed information about movies and the people behind them, including actors, directors, and other principals. You can search by movie title, apply filters, and view specific movie or individual profiles. All data is fetched from the IMDb API.
 
 This project was originally developed as part of a university web development unit but has since been refined to serve as a showcase of my skills in front-end and React development, and clean code practices.
 
