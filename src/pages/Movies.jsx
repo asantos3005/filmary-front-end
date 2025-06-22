@@ -36,7 +36,7 @@ export default function Movies() {
   useEffect(() => {
     const fetchMovies = async () => {
       try {
-        let url = `http://4.237.58.241:3000/movies/search?title=${searchQuery}`;
+        let url = `https://movie-catalog-api-hsgg.onrender.com/movies/search?title=${searchQuery}`;
         if (yearFilter) {
           url += `&year=${yearFilter}`;
         }
