@@ -72,11 +72,18 @@ export default function MovieData() {
         
   
         <div className="movie-poster">
-          <img
-            src={movie.poster}
-            alt="Movie Poster"
-            referrerPolicy="no-referrer"
-          />
+       <img
+          src={movie.poster}
+          alt="Movie Poster"
+          style={{ width: "350px", height: "500px" }}
+          referrerPolicy="no-referrer"
+          onError={(e) => {
+            if (e.target.src !== window.location.origin + '/noposter.png') {
+              e.target.src = '/noposter.png';
+            }
+          }}
+        />
+
         </div>
       </div>
 
