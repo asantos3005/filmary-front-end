@@ -1,12 +1,39 @@
-# React + Vite
+This movie catalog browser (Filmary) is a modern web application built with React that allows users to explore detailed information about movies and the people behind them, including actors, directors, and other principals. You can search by movie title, apply filters, and view specific movie or individual profiles. All data is fetched from the IMDb API.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project was originally developed as part of a university web development unit but has since been refined to serve as a showcase of my skills in front-end and React development, and clean code practices.
 
-Currently, two official plugins are available:
+## Video Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+https://youtu.be/SMkopgKk5uw 
+(57 seconds)
 
-## Expanding the ESLint configuration
+## Features
+🔎 Search for movies by title
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🧠 Filter results to refine your browsing experience
+
+🎥 View detailed movie pages including metadata and associated people
+
+👤 Explore principal profiles like actors, directors, etc.
+
+🔐 Authentication with token-based session handling and auto-refresh
+
+📦 Reusable helper functions for robust and DRY API request logic
+
+🧱 Modular architecture inspired by industry best practices
+
+## What I Learned
+- React fundamentals (components, hooks, context)
+
+- React Router for single-page navigation
+
+- Authentication using access/refresh JWT tokens
+
+- Building reusable helper utilities for API reliability
+
+- Structuring front-end apps with a clear and scalable architecture
+
+- Clean, maintainable code and component design
+
+- UI/UX considerations and mobile responsiveness
+
