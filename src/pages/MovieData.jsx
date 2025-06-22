@@ -36,7 +36,7 @@ export default function MovieData() {
       if (!id) return;
 
       const token = localStorage.getItem("token");
-      const url = `http://4.237.58.241:3000/movies/data/${id}`;
+      const url = `https://movie-catalog-api-hsgg.onrender.com/movies/data/${id}`;
 
       const res = await fetch(url, {
         headers: {

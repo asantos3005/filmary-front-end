@@ -52,7 +52,7 @@ export default function People() {
     useEffect(() => {
       const fetchPerson = async () => {
         try {
-          const url = `http://4.237.58.241:3000/people/${personid}`;
+          const url = `https://movie-catalog-api-hsgg.onrender.com/people/${personid}`;
           const res = await fetchWithAutoRefresh(url);
     
           if (res.status === 401) {
