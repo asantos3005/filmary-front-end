@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from './pages/Home';
-import Movies from './pages/movies';
+import Movies from './pages/Movies';
 import MovieData from './pages/MovieData';
 import LogInSignUp from './pages/LogInSignUp';
 import People from './pages/People';
